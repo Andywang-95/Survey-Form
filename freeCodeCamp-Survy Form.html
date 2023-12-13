@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>freeCodeCamp Survey Form</title>
+        <link  rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+            <h1 id="title">Favorite Motorcycle Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            <div class="container">
+            <form id="survey-form">
+                <label id="name-label" class="title">Name: 
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                </label>
+                <label id="email-label" class="title">Email: 
+                    <input type="email" id="email" name="email" placeholder="Enter your Email address" required />
+                </label>
+                <label id="number-label" class="title">Age: 
+                    <input type="number" id="number" name="age" min=18 max=65 placeholder="Enter your age" required />
+                </label>
+                <p class="title">Gender: </p>
+                <label id="gender-label">
+                    <input type="radio" id="gender" name="gender" value="Male" checked/> Male 
+                </label>
+                <label id="gender-label">
+                    <input type="radio" id="gender" name="gender" value="Female" /> Female
+                </label>
+                <label id="gender-label">
+                    <input type="radio" id="gender" name="gender"value="Other" /> Other 
+                </label>
+                <label id="brand-label" class="title">What is you favorite motorcycle brand?
+                    <select id="dropdown" name="brand">
+                        <option disabled selected value>Select brand</option>
+                        <option value="YAMAHA">YAMAHA</option>
+                        <option value="HONDA">HONDA</option>
+                        <option value="SUZUKI">SUZUKI</option>
+                        <option value="KAWASAKI">KAWASAKI</option>
+                        <option value="DUCATI">DUCATI</option>
+                        <option value="BMW">BMW</option>
+                        <option value="HARLEY-DAVIDSON">HARLEY-DAVIDSON</option>
+                        <option value="APRILIA">APRILIA</option>
+                        <option value="KTM">KTM</option>
+                        <option value="MV AGUSTA">MV AGUSTA</option>
+                        <option value="TRIUMPH">TRIUMPH</option>
+                        <option value="VESPA">VESPA</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </label>
+                <label id="other-brand-label" class="title">If the brand is not inside the list, please write below:
+                    <input type="text" id="other-brand" name="other-brand" />
+                </label>
+                <p class="title">What kind of bike would you like?</p>
+                <label id="bike-type-label">
+                    <input type="checkbox" id="bike-type" name="bike-type" value="URBAN"> URBAN
+                </label>
+                <label id="bike-type-label">
+                    <input type="checkbox" id="bike-type" name="bike-type" value="STREET"> STREET
+                </label>
+                <label id="bike-type-label">
+                    <input type="checkbox" id="bike-type" name="bike-type" value="SPORT"> SPORT
+                </label>
+                <label id="bike-type-label">
+                    <input type="checkbox" id="bike-type" name="bike-type" value="ADV"> ADVENTURE
+                </label>
+                <label id="bike-type-label">
+                    <input type="checkbox" id="bike-type" name="bike-type" value="CRUISER"> CRUISER
+                </label>
+                <label id="comment" class="title">Is there any other suggestion?
+                    <textarea id="comment" name="comment" rows="5" cols="40" placeholder="Enter what ever you want to tell us"></textarea>
+                </label>
+                <input id="submit" type="submit" value="Submit" />    
+            </form>
+            </div>
+    </body>
+</html>
