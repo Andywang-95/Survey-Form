@@ -77,10 +77,26 @@ input[type="submit"] {
     margin: 30px auto 0 auto;
     height: 40px;
     font-family: Poppins;
+    font-size: 18px;
     color: white;
     background-color: #15A830;
     background-position: center;
     background-size: cover;
+}
+input[type="submit"]:hover {
+    margin: 30px auto 0 auto;
+    height: 40px;
+    font-family: Poppins;
+    color: white;
+    background-color: #15AE31;
+}
+input[type="submit"]:active {
+    margin: 30px auto 0 auto;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 17px;
+    color: white;
+    background-color: #15AB31;
 }
 @media (max-width: 500px) {
     #gender-label {
